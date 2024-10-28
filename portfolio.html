@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Ayush</h1>
+        <p> Software Engineer</p>
+        <nav>
+            <a class="links" href="#about">About</a>
+            <a class="links" href="#skills">Skills</a>
+            <a class="links" href="#projects">Projects</a>
+            <a class="links" href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Hello! I'm a beginner software engineer passionate about coding and eager to start a career in tech. I’m skilled in HTML, CSS, and JavaScript and currently learning more advanced concepts to build better web applications.</p>
+    </section>
+
+    <section id="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>Bootstrap</li>
+            <li>JavaScript</li>
+            <li>Typescript</li>
+            <li>Git/GitHub</li>
+            <li>Angular</li>
+
+        </ul>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <p>Since I’m still learning, I’m building small projects to showcase my skills. Here are a few examples:</p>
+        <ul>
+            <li><strong>AI Skin Specialist:</strong> Uses AI to scan disease & symptoms and name the disease and prescription that are to be used.</li>
+            <li><strong>Personal Portfolio:</strong> A simple portfolio website to introduce myself and showcase my work.</li>
+        </ul>
+    </section>
+
+    <section>
+        <p class="down"> click down to download CV</p>
+        
+        <a href="files/Resume(ayush)new.pdf" download="CV">
+            <button>Download</button>
+        </a>&nbsp;
+        <img class="arrow" src="files/left.png" height="40px" width="40px">
+
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>If you'd like to get in touch, feel free to  contact me!</p>
+        <form id="contactForm" name="submit-to-google-sheet">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="Email" required>
+
+            <label for="phone">Phone Number:</label>
+            <input type="text" id="phone" name="phone" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+        <p id="formMessage"></p>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
